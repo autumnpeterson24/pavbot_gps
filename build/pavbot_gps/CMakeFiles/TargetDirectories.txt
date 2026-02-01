@@ -1,0 +1,10 @@
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/uninstall.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/pavbot_gps_uninstall.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/pavbot_gps.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/test.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/edit_cache.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/rebuild_cache.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/list_install_components.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/install.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/install/local.dir
+/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps/CMakeFiles/install/strip.dir

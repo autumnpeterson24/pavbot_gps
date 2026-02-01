@@ -1,0 +1,8 @@
+source;share/pavbot_gps/hook/cmake_prefix_path.ps1
+source;share/pavbot_gps/hook/cmake_prefix_path.dsv
+source;share/pavbot_gps/hook/cmake_prefix_path.sh
+source;share/pavbot_gps/local_setup.bash
+source;share/pavbot_gps/local_setup.dsv
+source;share/pavbot_gps/local_setup.ps1
+source;share/pavbot_gps/local_setup.sh
+source;share/pavbot_gps/local_setup.zsh

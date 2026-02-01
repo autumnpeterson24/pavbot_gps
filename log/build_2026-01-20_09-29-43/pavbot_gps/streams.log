@@ -1,0 +1,49 @@
+[0.093s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mrstalford/ros2_ws/src/pavbot_gps -DCMAKE_INSTALL_PREFIX=/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps
+[1.102s] -- The C compiler identification is GNU 11.4.0
+[1.999s] -- The CXX compiler identification is GNU 11.4.0
+[2.059s] -- Detecting C compiler ABI info
+[2.541s] -- Detecting C compiler ABI info - done
+[2.583s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.585s] -- Detecting C compile features
+[2.588s] -- Detecting C compile features - done
+[2.604s] -- Detecting CXX compiler ABI info
+[3.089s] -- Detecting CXX compiler ABI info - done
+[3.115s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.116s] -- Detecting CXX compile features
+[3.118s] -- Detecting CXX compile features - done
+[3.176s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.176s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.053s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[5.666s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.733s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.830s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.948s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.108s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.597s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.633s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.442s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.741s] -- Found FastRTPS: /opt/ros/humble/include  
+[8.200s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.312s] -- Looking for pthread.h
+[8.802s] -- Looking for pthread.h - found
+[8.811s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.266s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.272s] -- Found Threads: TRUE  
+[10.141s] -- Configuring done
+[10.208s] -- Generating done
+[10.232s] -- Build files have been written to: /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps
+[10.302s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mrstalford/ros2_ws/src/pavbot_gps -DCMAKE_INSTALL_PREFIX=/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps
+[10.305s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[10.617s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[25.965s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In member function ‘[01m[Kvoid PavbotGPS::update()[m[K’:
+[25.966s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kestop_pub[m[K’ was not declared in this scope
+[25.967s]    41 |     [01;31m[Kestop_pub[m[K->publish(msg);
+[25.967s]       |     [01;31m[K^~~~~~~~~[m[K
+[26.021s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In constructor ‘[01m[KPavbotGPS::PavbotGPS()[m[K’:
+[26.021s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kestop_pub[m[K’ was not declared in this scope
+[26.022s]    58 |     [01;31m[Kestop_pub[m[K = create_publisher<std_msgs::msg::Bool>("/sensors/gps", rclcpp::QoS(1).transient_local() // a queue depth of 1 to keep the latest value :)
+[26.022s]       |     [01;31m[K^~~~~~~~~[m[K
+[29.789s] gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+[29.793s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+[29.794s] gmake: *** [Makefile:146: all] Error 2
+[29.824s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
