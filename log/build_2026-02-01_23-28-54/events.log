@@ -1,0 +1,251 @@
+[0.000000] (-) TimerEvent: {}
+[0.001839] (pavbot_gps) JobQueued: {'identifier': 'pavbot_gps', 'dependencies': OrderedDict()}
+[0.002464] (pavbot_gps) JobStarted: {'identifier': 'pavbot_gps'}
+[0.055569] (pavbot_gps) JobProgress: {'identifier': 'pavbot_gps', 'progress': 'cmake'}
+[0.059476] (pavbot_gps) JobProgress: {'identifier': 'pavbot_gps', 'progress': 'build'}
+[0.062891] (pavbot_gps) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps', '--', '-j4', '-l4'], 'cwd': '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mrstalford'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mrstalford'), ('OLDPWD', '/home/mrstalford/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1210'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install:/home/mrstalford/ros2_ws/install:/home/mrstalford/ros2_ws/src/pavbot_imu/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mrstalford'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mrstalford'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mrstalford-desktop:@/tmp/.ICE-unix/1184,unix/mrstalford-desktop:/tmp/.ICE-unix/1184'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/63e1e801_14dd_40e6_8833_c3a5d132cf2f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HUKSJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/home/mrstalford/ros2_ws/src/pavbot_imu/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/opt/ros/humble')]), 'shell': False}
+[0.099220] (-) TimerEvent: {}
+[0.200221] (-) TimerEvent: {}
+[0.264083] (pavbot_gps) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pavbot_gps\x1b[0m\n'}
+[0.300445] (-) TimerEvent: {}
+[0.367099] (pavbot_gps) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o\x1b[0m\n'}
+[0.400639] (-) TimerEvent: {}
+[0.501462] (-) TimerEvent: {}
+[0.602174] (-) TimerEvent: {}
+[0.703039] (-) TimerEvent: {}
+[0.803878] (-) TimerEvent: {}
+[0.904633] (-) TimerEvent: {}
+[1.005409] (-) TimerEvent: {}
+[1.106146] (-) TimerEvent: {}
+[1.206972] (-) TimerEvent: {}
+[1.307754] (-) TimerEvent: {}
+[1.408562] (-) TimerEvent: {}
+[1.509320] (-) TimerEvent: {}
+[1.610125] (-) TimerEvent: {}
+[1.710984] (-) TimerEvent: {}
+[1.811762] (-) TimerEvent: {}
+[1.912572] (-) TimerEvent: {}
+[2.013342] (-) TimerEvent: {}
+[2.114206] (-) TimerEvent: {}
+[2.215157] (-) TimerEvent: {}
+[2.316036] (-) TimerEvent: {}
+[2.416929] (-) TimerEvent: {}
+[2.517774] (-) TimerEvent: {}
+[2.618693] (-) TimerEvent: {}
+[2.719546] (-) TimerEvent: {}
+[2.820493] (-) TimerEvent: {}
+[2.921316] (-) TimerEvent: {}
+[3.022190] (-) TimerEvent: {}
+[3.123000] (-) TimerEvent: {}
+[3.223993] (-) TimerEvent: {}
+[3.324832] (-) TimerEvent: {}
+[3.425680] (-) TimerEvent: {}
+[3.526540] (-) TimerEvent: {}
+[3.627379] (-) TimerEvent: {}
+[3.728273] (-) TimerEvent: {}
+[3.829101] (-) TimerEvent: {}
+[3.930205] (-) TimerEvent: {}
+[4.031490] (-) TimerEvent: {}
+[4.132371] (-) TimerEvent: {}
+[4.233196] (-) TimerEvent: {}
+[4.334138] (-) TimerEvent: {}
+[4.434963] (-) TimerEvent: {}
+[4.535968] (-) TimerEvent: {}
+[4.636827] (-) TimerEvent: {}
+[4.737876] (-) TimerEvent: {}
+[4.838845] (-) TimerEvent: {}
+[4.939687] (-) TimerEvent: {}
+[5.040568] (-) TimerEvent: {}
+[5.141441] (-) TimerEvent: {}
+[5.242300] (-) TimerEvent: {}
+[5.343128] (-) TimerEvent: {}
+[5.444007] (-) TimerEvent: {}
+[5.544856] (-) TimerEvent: {}
+[5.645717] (-) TimerEvent: {}
+[5.746612] (-) TimerEvent: {}
+[5.847469] (-) TimerEvent: {}
+[5.948435] (-) TimerEvent: {}
+[6.049296] (-) TimerEvent: {}
+[6.150287] (-) TimerEvent: {}
+[6.251148] (-) TimerEvent: {}
+[6.352062] (-) TimerEvent: {}
+[6.452908] (-) TimerEvent: {}
+[6.553811] (-) TimerEvent: {}
+[6.654663] (-) TimerEvent: {}
+[6.755514] (-) TimerEvent: {}
+[6.856367] (-) TimerEvent: {}
+[6.957193] (-) TimerEvent: {}
+[7.058048] (-) TimerEvent: {}
+[7.158889] (-) TimerEvent: {}
+[7.259773] (-) TimerEvent: {}
+[7.360660] (-) TimerEvent: {}
+[7.461498] (-) TimerEvent: {}
+[7.562356] (-) TimerEvent: {}
+[7.663207] (-) TimerEvent: {}
+[7.764118] (-) TimerEvent: {}
+[7.864954] (-) TimerEvent: {}
+[7.965808] (-) TimerEvent: {}
+[8.066704] (-) TimerEvent: {}
+[8.167599] (-) TimerEvent: {}
+[8.268472] (-) TimerEvent: {}
+[8.369329] (-) TimerEvent: {}
+[8.470197] (-) TimerEvent: {}
+[8.571112] (-) TimerEvent: {}
+[8.671982] (-) TimerEvent: {}
+[8.772844] (-) TimerEvent: {}
+[8.873703] (-) TimerEvent: {}
+[8.974556] (-) TimerEvent: {}
+[9.075473] (-) TimerEvent: {}
+[9.176373] (-) TimerEvent: {}
+[9.277234] (-) TimerEvent: {}
+[9.378113] (-) TimerEvent: {}
+[9.479040] (-) TimerEvent: {}
+[9.579951] (-) TimerEvent: {}
+[9.680908] (-) TimerEvent: {}
+[9.781781] (-) TimerEvent: {}
+[9.882841] (-) TimerEvent: {}
+[9.983749] (-) TimerEvent: {}
+[10.084664] (-) TimerEvent: {}
+[10.185514] (-) TimerEvent: {}
+[10.286394] (-) TimerEvent: {}
+[10.387272] (-) TimerEvent: {}
+[10.488133] (-) TimerEvent: {}
+[10.588784] (pavbot_gps) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16\x1b[m\x1b[K:\n'}
+[10.589807] (-) TimerEvent: {}
+[10.590279] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<float, float> GPS::readLatLng()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.590885] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:60:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<float, float>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[10.591389] (pavbot_gps) StderrLine: {'line': b'   60 |     std::pair<float, float> readLatLng() \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[10.591875] (pavbot_gps) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[10.592409] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:62:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.593136] (pavbot_gps) StderrLine: {'line': b'   62 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[10.593657] (pavbot_gps) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[10.594128] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool GPS::close()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.594630] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:66:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.595081] (pavbot_gps) StderrLine: {'line': b'   66 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[10.595513] (pavbot_gps) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[10.612164] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool GPS::parseNMEA(double&, double&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.612886] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:102:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbuf\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.613372] (pavbot_gps) StderrLine: {'line': b'  102 |         std::string sentence = \x1b[01;31m\x1b[Kbuf\x1b[m\x1b[K;\n'}
+[10.613847] (pavbot_gps) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[10.616759] (pavbot_gps) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.617691] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.618391] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.619250] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.620180] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.620924] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.621446] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.621913] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.622481] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.623042] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.623611] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12\x1b[m\x1b[K:\n'}
+[10.625314] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:115:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.625973] (pavbot_gps) StderrLine: {'line': b'  115 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Parsing non-void GPRMC packet: %s", sentence.c_str());\n'}
+[10.628575] (pavbot_gps) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.629386] (pavbot_gps) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[10.631106] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.632307] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.633047] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.633723] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.634219] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.634664] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.635191] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.635592] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.636138] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.636565] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.636963] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12\x1b[m\x1b[K:\n'}
+[10.637346] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[10.637737] (pavbot_gps) StderrLine: {'line': b'  106 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[10.638238] (pavbot_gps) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.638710] (pavbot_gps) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.639200] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.639742] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.640378] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.640844] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.641240] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.641652] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.642060] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.642456] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.642861] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.643279] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12\x1b[m\x1b[K:\n'}
+[10.643728] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:115:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[10.644291] (pavbot_gps) StderrLine: {'line': b'  115 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Parsing non-void GPRMC packet: %s", sentence.c_str());\n'}
+[10.644740] (pavbot_gps) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.645201] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:126:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.645657] (pavbot_gps) StderrLine: {'line': b'  126 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Parsing non-void GPGGA packet: %s", sentence.c_str());\n'}
+[10.646060] (pavbot_gps) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.646461] (pavbot_gps) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[10.646876] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.647285] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.647702] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.648231] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.648715] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.649111] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.649673] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.650123] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.650550] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.650949] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.651344] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12\x1b[m\x1b[K:\n'}
+[10.651767] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[10.652374] (pavbot_gps) StderrLine: {'line': b'  106 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[10.652888] (pavbot_gps) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.653361] (pavbot_gps) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[10.653781] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[10.654316] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[10.654823] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[10.655265] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[10.655694] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[10.656272] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[10.656690] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[10.657096] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.657518] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[10.657953] (pavbot_gps) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12\x1b[m\x1b[K:\n'}
+[10.658405] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:126:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[10.658839] (pavbot_gps) StderrLine: {'line': b'  126 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Parsing non-void GPGGA packet: %s", sentence.c_str());\n'}
+[10.659257] (pavbot_gps) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.690030] (-) TimerEvent: {}
+[10.733298] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPavbotGPS::PavbotGPS()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.734184] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:87:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_d_lat\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.734850] (pavbot_gps) StderrLine: {'line': b'   87 |     \x1b[01;31m\x1b[Klast_d_lat\x1b[m\x1b[K = 0;\n'}
+[10.735325] (pavbot_gps) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.758808] (pavbot_gps) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:88:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_d_lng\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[10.759489] (pavbot_gps) StderrLine: {'line': b'   88 |     \x1b[01;31m\x1b[Klast_d_lng\x1b[m\x1b[K = 0;\n'}
+[10.759994] (pavbot_gps) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.790314] (-) TimerEvent: {}
+[10.891251] (-) TimerEvent: {}
+[10.992131] (-) TimerEvent: {}
+[11.093050] (-) TimerEvent: {}
+[11.193937] (-) TimerEvent: {}
+[11.294774] (-) TimerEvent: {}
+[11.395613] (-) TimerEvent: {}
+[11.496477] (-) TimerEvent: {}
+[11.597305] (-) TimerEvent: {}
+[11.698197] (-) TimerEvent: {}
+[11.799035] (-) TimerEvent: {}
+[11.899942] (-) TimerEvent: {}
+[12.000793] (-) TimerEvent: {}
+[12.101609] (-) TimerEvent: {}
+[12.202512] (-) TimerEvent: {}
+[12.303403] (-) TimerEvent: {}
+[12.404261] (-) TimerEvent: {}
+[12.505091] (-) TimerEvent: {}
+[12.605947] (-) TimerEvent: {}
+[12.706755] (-) TimerEvent: {}
+[12.807578] (-) TimerEvent: {}
+[12.908538] (-) TimerEvent: {}
+[13.009660] (-) TimerEvent: {}
+[13.110627] (-) TimerEvent: {}
+[13.211690] (-) TimerEvent: {}
+[13.312949] (-) TimerEvent: {}
+[13.413783] (-) TimerEvent: {}
+[13.514642] (-) TimerEvent: {}
+[13.615467] (-) TimerEvent: {}
+[13.716318] (-) TimerEvent: {}
+[13.817238] (-) TimerEvent: {}
+[13.918096] (-) TimerEvent: {}
+[14.018938] (-) TimerEvent: {}
+[14.019795] (pavbot_gps) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1\n'}
+[14.020766] (pavbot_gps) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2\n'}
+[14.021321] (pavbot_gps) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.028505] (pavbot_gps) CommandEnded: {'returncode': 2}
+[14.089392] (pavbot_gps) JobEnded: {'identifier': 'pavbot_gps', 'rc': 2}
+[14.100957] (-) EventReactorShutdown: {}

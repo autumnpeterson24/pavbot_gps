@@ -1,0 +1,36 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[0.264s] [35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[0.365s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[10.757s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[10.758s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::readLatLng(std::pair<float, float>&)[m[K’:
+[10.758s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:62:33:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kstd::pair<float, float> latLng[m[K’ shadows a parameter
+[10.758s]    62 |         std::pair<float, float> [01;31m[KlatLng[m[K = new std::pair(0, 0);
+[10.759s]       |                                 [01;31m[K^~~~~~[m[K
+[10.759s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:60:47:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::pair<float, float>& latLng[m[K’ previously declared here
+[10.760s]    60 |  bool readLatLng([01;36m[Kstd::pair<float, float> &latLng[m[K) {
+[10.760s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[10.761s] 
+[10.773s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:62:42:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kstd::pair<int, int>*[m[K’ to non-scalar type ‘[01m[Kstd::pair<float, float>[m[K’ requested
+[10.773s]    62 |        std::pair<float, float> latLng = [01;31m[Knew std::pair(0, 0)[m[K;
+[10.774s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[10.774s] 
+[10.777s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::close()[m[K’:
+[10.777s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:90:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[10.778s]    90 |     [01;35m[K}[m[K
+[10.778s]       |     [01;35m[K^[m[K
+[10.823s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In member function ‘[01m[Kvoid PavbotGPS::update()[m[K’:
+[10.824s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatus[m[K’ was not declared in this scope; did you mean ‘[01m[Kstat64[m[K’?
+[10.824s]    53 |     [01;31m[Kstatus[m[K = gps.readLatLng(latLng);
+[10.825s]       |     [01;31m[K^~~~~~[m[K
+[10.825s]       |     [32m[Kstat64[m[K
+[10.900s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In constructor ‘[01m[KPavbotGPS::PavbotGPS()[m[K’:
+[10.901s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_d_lat[m[K’ was not declared in this scope
+[10.902s]    87 |     [01;31m[Klast_d_lat[m[K = 0;
+[10.902s]       |     [01;31m[K^~~~~~~~~~[m[K
+[10.926s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_d_lng[m[K’ was not declared in this scope
+[10.926s]    88 |     [01;31m[Klast_d_lng[m[K = 0;
+[10.927s]       |     [01;31m[K^~~~~~~~~~[m[K
+[14.042s] gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+[14.045s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+[14.046s] gmake: *** [Makefile:146: all] Error 2
+[14.055s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4

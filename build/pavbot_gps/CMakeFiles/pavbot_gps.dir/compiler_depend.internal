@@ -716,4 +716,24 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp
+ /home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h
+ /usr/include/fcntl.h
+ /usr/include/aarch64-linux-gnu/bits/fcntl.h
+ /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h
+ /usr/include/linux/falloc.h
+ /usr/include/aarch64-linux-gnu/bits/stat.h
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h
+ /usr/include/termios.h
+ /usr/include/aarch64-linux-gnu/bits/termios.h
+ /usr/include/aarch64-linux-gnu/bits/termios-struct.h
+ /usr/include/aarch64-linux-gnu/bits/termios-c_cc.h
+ /usr/include/aarch64-linux-gnu/bits/termios-c_iflag.h
+ /usr/include/aarch64-linux-gnu/bits/termios-c_oflag.h
+ /usr/include/aarch64-linux-gnu/bits/termios-baud.h
+ /usr/include/aarch64-linux-gnu/bits/termios-c_cflag.h
+ /usr/include/aarch64-linux-gnu/bits/termios-c_lflag.h
+ /usr/include/aarch64-linux-gnu/bits/termios-tcflow.h
+ /usr/include/aarch64-linux-gnu/bits/termios-misc.h
+ /usr/include/aarch64-linux-gnu/sys/ttydefaults.h
 

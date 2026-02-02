@@ -1,0 +1,9 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:14:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K,[m[K’ token
+   14 |     GPS[34m[K([m[Kport[01;31m[K,[m[K baud, timeout) {
+      |        [34m[K~[m[K    [01;31m[K^[m[K
+      |             [32m[K)[m[K
+gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

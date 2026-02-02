@@ -1,0 +1,106 @@
+[0.464s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.465s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff84421180>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff845ca0e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff845ca0e0>>, mixin_verb=('build',))
+[1.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.433s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mrstalford/ros2_ws/src/pavbot_gps'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.435s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.488s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'pavbot_gps'
+[1.489s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.489s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.489s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.489s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.489s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.615s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.627s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mrstalford/ros2_ws/src/pavbot_gps/install
+[1.629s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/mrstalford/ros2_ws/install
+[1.632s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mrstalford/ros2_ws/src/pavbot_imu/install
+[1.642s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[1.648s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.814s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'cmake_args' from command line to 'None'
+[1.814s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'cmake_target' from command line to 'None'
+[1.814s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.814s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'cmake_clean_cache' from command line to 'False'
+[1.815s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'cmake_clean_first' from command line to 'False'
+[1.815s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'cmake_force_configure' from command line to 'False'
+[1.815s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'ament_cmake_args' from command line to 'None'
+[1.815s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'catkin_cmake_args' from command line to 'None'
+[1.815s] Level 5:colcon.colcon_core.verb:set package 'pavbot_gps' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.815s] DEBUG:colcon.colcon_core.verb:Building package 'pavbot_gps' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps', 'merge_install': False, 'path': '/home/mrstalford/ros2_ws/src/pavbot_gps', 'symlink_install': False, 'test_result_base': None}
+[1.816s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.819s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.820s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mrstalford/ros2_ws/src/pavbot_gps' with build type 'ament_cmake'
+[1.821s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mrstalford/ros2_ws/src/pavbot_gps'
+[1.829s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.830s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.831s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[2.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[2.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps
+[2.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pavbot_gps)
+[2.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps
+[2.334s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps' for CMake module files
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps' for CMake config files
+[2.339s] Level 1:colcon.colcon_core.shell:create_environment_hook('pavbot_gps', 'cmake_prefix_path')
+[2.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/hook/cmake_prefix_path.ps1'
+[2.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/hook/cmake_prefix_path.dsv'
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/hook/cmake_prefix_path.sh'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib'
+[2.352s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/bin'
+[2.353s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pkgconfig/pavbot_gps.pc'
+[2.355s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/python3.10/site-packages'
+[2.357s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/bin'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.ps1'
+[2.363s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.dsv'
+[2.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.sh'
+[2.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.bash'
+[2.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.zsh'
+[2.377s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/colcon-core/packages/pavbot_gps)
+[2.380s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pavbot_gps)
+[2.381s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps' for CMake module files
+[2.384s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps' for CMake config files
+[2.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('pavbot_gps', 'cmake_prefix_path')
+[2.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/hook/cmake_prefix_path.ps1'
+[2.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/hook/cmake_prefix_path.dsv'
+[2.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/hook/cmake_prefix_path.sh'
+[2.394s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib'
+[2.395s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/bin'
+[2.395s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pkgconfig/pavbot_gps.pc'
+[2.396s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/python3.10/site-packages'
+[2.397s] Level 1:colcon.colcon_core.environment:checking '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/bin'
+[2.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.ps1'
+[2.401s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.dsv'
+[2.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.sh'
+[2.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.bash'
+[2.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.zsh'
+[2.412s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/colcon-core/packages/pavbot_gps)
+[2.413s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.414s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.415s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.415s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.441s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.441s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.503s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.505s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/local_setup.ps1'
+[2.509s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mrstalford/ros2_ws/src/pavbot_gps/install/_local_setup_util_ps1.py'
+[2.516s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/setup.ps1'
+[2.526s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/local_setup.sh'
+[2.531s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mrstalford/ros2_ws/src/pavbot_gps/install/_local_setup_util_sh.py'
+[2.534s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/setup.sh'
+[2.543s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/local_setup.bash'
+[2.547s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/setup.bash'
+[2.555s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/local_setup.zsh'
+[2.558s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mrstalford/ros2_ws/src/pavbot_gps/install/setup.zsh'

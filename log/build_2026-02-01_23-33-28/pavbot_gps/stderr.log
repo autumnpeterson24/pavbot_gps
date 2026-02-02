@@ -1,0 +1,63 @@
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kstd::pair<float, float> GPS::readLatLng()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:60:42:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+   60 |     std::pair<float, float> readLatLng() [01;36m[K{[m[K
+      |                                          [01;36m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:62:42:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kstd::pair<int, int>*[m[K’ to non-scalar type ‘[01m[Kstd::pair<float, float>[m[K’ requested
+   62 |        std::pair<float, float> latLng = [01;31m[Knew std::pair(0, 0)[m[K;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:63:41:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfalse[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   63 |         if (sentence.size() < 6) return [01;31m[Kfalse[m[K; // Dud
+      |                                         [01;31m[K^~~~~[m[K
+      |                                         [01;31m[K|[m[K
+      |                                         [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:68:39:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfalse[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   68 |         if (fields.size() < 7) return [01;31m[Kfalse[m[K; // Incomplete data; untrusted
+      |                                       [01;31m[K^~~~~[m[K
+      |                                       [01;31m[K|[m[K
+      |                                       [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:69:38:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfalse[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   69 |         if (fields[2] != "A") return [01;31m[Kfalse[m[K; // Not "A"ctive ("V"oid)
+      |                                      [01;31m[K^~~~~[m[K
+      |                                      [01;31m[K|[m[K
+      |                                      [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:72:16:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Ktrue[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   72 |         return [01;31m[Ktrue[m[K;
+      |                [01;31m[K^~~~[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:77:39:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfalse[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   77 |         if (fields.size() < 6) return [01;31m[Kfalse[m[K; // Incomplete data; untrusted
+      |                                       [01;31m[K^~~~~[m[K
+      |                                       [01;31m[K|[m[K
+      |                                       [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:79:30:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfalse[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   79 |         if (fix == 0) return [01;31m[Kfalse[m[K; // 0 ->  NO FIX
+      |                              [01;31m[K^~~~~[m[K
+      |                              [01;31m[K|[m[K
+      |                              [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:82:16:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Ktrue[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   82 |         return [01;31m[Ktrue[m[K;
+      |                [01;31m[K^~~~[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:85:16:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Kfalse[m[K’ from ‘[01m[Kbool[m[K’ to ‘[01m[Kstd::pair<float, float>[m[K’
+   85 |         return [01;31m[Kfalse[m[K;
+      |                [01;31m[K^~~~~[m[K
+      |                [01;31m[K|[m[K
+      |                [01;31m[Kbool[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::close()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:90:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   90 |     [01;35m[K}[m[K
+      |     [01;35m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In constructor ‘[01m[KPavbotGPS::PavbotGPS()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_d_lat[m[K’ was not declared in this scope
+   87 |     [01;31m[Klast_d_lat[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_d_lng[m[K’ was not declared in this scope
+   88 |     [01;31m[Klast_d_lng[m[K = 0;
+      |     [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

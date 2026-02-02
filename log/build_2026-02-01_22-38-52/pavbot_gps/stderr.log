@@ -1,0 +1,18 @@
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In constructor ‘[01m[KPavbotGPS::PavbotGPS()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:145:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGPS::GPS()[m[K’
+  145 |   PavbotGPS() : Node("pavbot_gps"[01;31m[K)[m[K {
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:14:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGPS::GPS(std::string, speed_t, int)[m[K’
+   14 |     [01;36m[KGPS[m[K(std::string port, speed_t baud, int imeout)
+      |     [01;36m[K^~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:14:5:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:12:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGPS::GPS(const GPS&)[m[K’
+   12 | class [01;36m[KGPS[m[K {
+      |       [01;36m[K^~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:12:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:12:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KGPS::GPS(GPS&&)[m[K’
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:12:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

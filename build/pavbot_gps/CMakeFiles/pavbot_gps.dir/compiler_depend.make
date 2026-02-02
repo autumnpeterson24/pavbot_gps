@@ -714,8 +714,54 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
+  ../../src/gps.h \
+  /usr/include/fcntl.h \
+  /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/aarch64-linux-gnu/bits/stat.h \
+  /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+  /usr/include/termios.h \
+  /usr/include/aarch64-linux-gnu/bits/termios.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-struct.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-baud.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/aarch64-linux-gnu/bits/termios-misc.h \
+  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h
 
+
+/usr/include/aarch64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios-baud.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios-c_iflag.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios-c_cc.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios-struct.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios.h:
+
+/usr/include/termios.h:
+
+/usr/include/aarch64-linux-gnu/bits/struct_stat.h:
+
+/usr/include/aarch64-linux-gnu/bits/stat.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/aarch64-linux-gnu/bits/fcntl.h:
+
+../../src/gps.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp:
 
@@ -1071,6 +1117,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 
 /usr/include/aarch64-linux-gnu/bits/timex.h:
 
+/usr/include/linux/falloc.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
 
 /usr/include/c++/11/bits/istream.tcc:
@@ -1110,6 +1158,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 /usr/include/aarch64-linux-gnu/bits/signal_ext.h:
 
 /usr/include/c++/11/typeinfo:
+
+/usr/include/aarch64-linux-gnu/bits/termios-tcflow.h:
 
 /usr/include/aarch64-linux-gnu/asm/bitsperlong.h:
 
@@ -1255,6 +1305,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 
 /usr/include/endian.h:
 
+/usr/include/aarch64-linux-gnu/bits/termios-c_oflag.h:
+
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/c++/11/bits/std_mutex.h:
@@ -1318,6 +1370,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 /usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/termios-c_cflag.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
@@ -1476,6 +1530,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 /usr/include/aarch64-linux-gnu/bits/environments.h:
 
 /opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
+/usr/include/aarch64-linux-gnu/bits/termios-misc.h:
 
 /usr/include/c++/11/system_error:
 
@@ -1749,6 +1805,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
+/usr/include/aarch64-linux-gnu/bits/fcntl-linux.h:
+
 /opt/ros/humble/include/rmw/rmw/init_options.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
@@ -1948,6 +2006,8 @@ CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o: ../../src/pavbot_gps.cpp \
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
+
+/usr/include/fcntl.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 

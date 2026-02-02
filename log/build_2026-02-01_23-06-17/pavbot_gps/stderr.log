@@ -1,0 +1,12 @@
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kstd::pair<float, float> GPS::readLatLng()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:49:42:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+   49 |     std::pair<float, float> readLatLng() [01;36m[K{[m[K
+      |                                          [01;36m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:51:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   51 |     [01;35m[K}[m[K
+      |     [01;35m[K^[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::close()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:55:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   55 |     [01;35m[K}[m[K
+      |     [01;35m[K^[m[K

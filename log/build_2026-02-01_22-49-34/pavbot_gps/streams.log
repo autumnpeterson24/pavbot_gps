@@ -1,0 +1,48 @@
+[0.083s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[0.269s] [35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[0.370s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[10.741s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[10.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[10.742s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[10.742s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.743s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[10.743s] /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp: In instantiation of ‘[01m[Kauto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool) [with ParameterT = unsigned int; std::string = std::__cxx11::basic_string<char>; rcl_interfaces::msg::ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >][m[K’:
+[10.744s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:148:38:[m[K   required from here
+[10.744s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:204:15:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KParameterValue(const unsigned int&)[m[K’ is ambiguous
+[10.745s]   204 |       rclcpp::[01;31m[KParameterValue(default_value)[m[K,
+[10.745s]       |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.745s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[10.746s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[10.746s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[10.747s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[10.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[10.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.749s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[10.749s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:94:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(double)[m[K’
+[10.750s]    94 |   explicit [01;36m[KParameterValue[m[K(const double double_value);
+[10.750s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[10.750s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(float)[m[K’
+[10.751s]    91 |   explicit [01;36m[KParameterValue[m[K(const float double_value);
+[10.752s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[10.752s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:88:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(int64_t)[m[K’
+[10.752s]    88 |   explicit [01;36m[KParameterValue[m[K(const int64_t int_value);
+[10.753s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[10.753s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:85:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(int)[m[K’
+[10.754s]    85 |   explicit [01;36m[KParameterValue[m[K(const int int_value);
+[10.754s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[10.755s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:82:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(bool)[m[K’
+[10.755s]    82 |   explicit [01;36m[KParameterValue[m[K(const bool bool_value);
+[10.756s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[10.756s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(const rclcpp::ParameterValue&)[m[K’
+[10.756s]    71 | class [01;36m[KParameterValue[m[K
+[10.757s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[10.757s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:71:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::ParameterValue::ParameterValue(rclcpp::ParameterValue&&)[m[K’
+[10.789s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In constructor ‘[01m[KPavbotGPS::PavbotGPS()[m[K’:
+[10.790s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:169:5:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KGPS PavbotGPS::gps()[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[10.791s]   169 |     [01;31m[Kgps[m[K.configure(port, baud, timeout_ms);
+[10.791s]       |     [01;31m[K^~~[m[K
+[10.792s]       |        [32m[K()[m[K
+[13.890s] gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+[13.891s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+[13.892s] gmake: *** [Makefile:146: all] Error 2
+[13.899s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4

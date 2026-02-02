@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPair[m[K’ does not name a type
+   48 |     [01;31m[KPair[m[K<float, float> readLatLng() {
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::close()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:54:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   54 |     [01;35m[K}[m[K
+      |     [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

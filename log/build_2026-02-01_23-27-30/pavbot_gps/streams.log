@@ -1,0 +1,113 @@
+[0.124s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[0.388s] [35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[0.529s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[12.421s] In file included from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:16[m[K:
+[12.422s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kstd::string GPS::read()[m[K’:
+[12.422s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:52:21:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGPS::read(int&, char [256], long unsigned int)[m[K’
+[12.423s]    52 |         int n = [01;31m[Kread(this->fd, buf, sizeof(buf) - 1)[m[K;
+[12.423s]       |                 [01;31m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.423s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:49:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::string GPS::read()[m[K’
+[12.424s]    49 |     std::string [01;36m[Kread[m[K() {
+[12.424s]       |                 [01;36m[K^~~~[m[K
+[12.425s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:49:17:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[12.427s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kstd::pair<float, float> GPS::readLatLng()[m[K’:
+[12.428s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:60:42:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[12.429s]    60 |     std::pair<float, float> readLatLng() [01;36m[K{[m[K
+[12.429s]       |                                          [01;36m[K^[m[K
+[12.433s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:62:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[12.433s]    62 |     [01;35m[K}[m[K
+[12.434s]       |     [01;35m[K^[m[K
+[12.435s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::close()[m[K’:
+[12.435s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:66:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[12.436s]    66 |     [01;35m[K}[m[K
+[12.436s]       |     [01;35m[K^[m[K
+[12.462s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:[m[K In member function ‘[01m[Kbool GPS::parseNMEA(double&, double&)[m[K’:
+[12.463s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:102:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kbuf[m[K’ was not declared in this scope
+[12.463s]   102 |         std::string sentence = [01;31m[Kbuf[m[K;
+[12.464s]       |                                [01;31m[K^~~[m[K
+[12.466s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.467s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.467s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.468s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.468s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.470s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.471s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.472s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.472s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.473s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.473s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[12.474s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:115:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[12.474s]   115 |         RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Parsing non-void GPRMC packet: %s", sentence.c_str());
+[12.475s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[12.475s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[12.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.476s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.477s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.479s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.479s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.480s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[12.480s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[12.481s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[12.481s]       |                 [01;36m[K^~~~~~[m[K
+[12.482s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.482s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.483s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.484s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.485s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.485s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.485s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.486s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[12.486s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:115:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.487s]   115 |         [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Parsing non-void GPRMC packet: %s", sentence.c_str());
+[12.487s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[12.488s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:126:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[12.488s]   126 |         RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Parsing non-void GPGGA packet: %s", sentence.c_str());
+[12.489s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[12.489s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+[12.490s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.490s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.491s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.492s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.492s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.493s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.493s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.493s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.494s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.494s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[12.495s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[12.495s]   106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[12.496s]       |                 [01;36m[K^~~~~~[m[K
+[12.496s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[12.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[12.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[12.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[12.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[12.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[12.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[12.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.500s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.500s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.501s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[12.501s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/gps.h:126:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.502s]   126 |         [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Parsing non-void GPGGA packet: %s", sentence.c_str());
+[12.503s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[12.585s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In constructor ‘[01m[KPavbotGPS::PavbotGPS()[m[K’:
+[12.585s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_d_lat[m[K’ was not declared in this scope
+[12.586s]    87 |     [01;31m[Klast_d_lat[m[K = 0;
+[12.586s]       |     [01;31m[K^~~~~~~~~~[m[K
+[12.610s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_d_lng[m[K’ was not declared in this scope
+[12.610s]    88 |     [01;31m[Klast_d_lng[m[K = 0;
+[12.611s]       |     [01;31m[K^~~~~~~~~~[m[K
+[15.902s] gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+[15.903s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+[15.904s] gmake: *** [Makefile:146: all] Error 2
+[15.911s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
