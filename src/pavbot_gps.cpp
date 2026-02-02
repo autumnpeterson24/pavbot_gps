@@ -13,16 +13,8 @@ Subscribes to:
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
 
+// For GPS stuff
 #include "gps.h"
-
-// For I/O with the GPS
-#include <vector>
-#include <fcntl.h>
-#include <unistd.h>
-#include <termios.h>
-#include <cstring>
-#include <iostream>
-#include <cerrno>
 #include <utility>
 
 class PavbotGPS : public rclcpp::Node
