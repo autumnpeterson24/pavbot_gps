@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.001793] (pavbot_gps) JobQueued: {'identifier': 'pavbot_gps', 'dependencies': OrderedDict()}
+[0.002393] (pavbot_gps) JobStarted: {'identifier': 'pavbot_gps'}
+[0.051298] (pavbot_gps) JobProgress: {'identifier': 'pavbot_gps', 'progress': 'cmake'}
+[0.054397] (pavbot_gps) JobProgress: {'identifier': 'pavbot_gps', 'progress': 'build'}
+[0.057612] (pavbot_gps) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps', '--', '-j4', '-l4'], 'cwd': '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mrstalford'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mrstalford'), ('OLDPWD', '/home/mrstalford'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1272'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install:/home/mrstalford/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mrstalford'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mrstalford'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mrstalford-desktop:@/tmp/.ICE-unix/1249,unix/mrstalford-desktop:/tmp/.ICE-unix/1249'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e3aab13_ef27_4be3_a98d_e2e3e01a0ab4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DNE5J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/opt/ros/humble')]), 'shell': False}
+[0.099201] (-) TimerEvent: {}
+[0.200008] (-) TimerEvent: {}
+[0.266479] (pavbot_gps) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pavbot_gps\x1b[0m\n'}
+[0.300190] (-) TimerEvent: {}
+[0.371662] (pavbot_gps) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o\x1b[0m\n'}
+[0.400418] (-) TimerEvent: {}
+[0.501342] (-) TimerEvent: {}
+[0.602118] (-) TimerEvent: {}
+[0.702873] (-) TimerEvent: {}
+[0.803789] (-) TimerEvent: {}
+[0.904864] (-) TimerEvent: {}
+[1.005652] (-) TimerEvent: {}
+[1.106451] (-) TimerEvent: {}
+[1.207283] (-) TimerEvent: {}
+[1.308068] (-) TimerEvent: {}
+[1.408804] (-) TimerEvent: {}
+[1.509528] (-) TimerEvent: {}
+[1.610326] (-) TimerEvent: {}
+[1.711204] (-) TimerEvent: {}
+[1.811951] (-) TimerEvent: {}
+[1.912725] (-) TimerEvent: {}
+[2.013505] (-) TimerEvent: {}
+[2.114351] (-) TimerEvent: {}
+[2.215253] (-) TimerEvent: {}
+[2.316092] (-) TimerEvent: {}
+[2.416869] (-) TimerEvent: {}
+[2.517694] (-) TimerEvent: {}
+[2.618578] (-) TimerEvent: {}
+[2.719451] (-) TimerEvent: {}
+[2.820329] (-) TimerEvent: {}
+[2.921203] (-) TimerEvent: {}
+[3.022193] (-) TimerEvent: {}
+[3.123141] (-) TimerEvent: {}
+[3.224065] (-) TimerEvent: {}
+[3.325001] (-) TimerEvent: {}
+[3.425845] (-) TimerEvent: {}
+[3.526755] (-) TimerEvent: {}
+[3.627631] (-) TimerEvent: {}
+[3.728550] (-) TimerEvent: {}
+[3.829343] (-) TimerEvent: {}
+[3.930229] (-) TimerEvent: {}
+[4.031108] (-) TimerEvent: {}
+[4.131934] (-) TimerEvent: {}
+[4.232806] (-) TimerEvent: {}
+[4.333900] (-) TimerEvent: {}
+[4.435279] (-) TimerEvent: {}
+[4.536629] (-) TimerEvent: {}
+[4.637864] (-) TimerEvent: {}
+[4.739365] (-) TimerEvent: {}
+[4.841885] (-) TimerEvent: {}
+[4.943118] (-) TimerEvent: {}
+[5.044592] (-) TimerEvent: {}
+[5.146413] (-) TimerEvent: {}
+[5.250087] (-) TimerEvent: {}
+[5.351580] (-) TimerEvent: {}
+[5.452985] (-) TimerEvent: {}
+[5.554086] (-) TimerEvent: {}
+[5.655684] (-) TimerEvent: {}
+[5.756554] (-) TimerEvent: {}
+[5.857411] (-) TimerEvent: {}
+[5.958444] (-) TimerEvent: {}
+[6.059569] (-) TimerEvent: {}
+[6.161032] (-) TimerEvent: {}
+[6.261892] (-) TimerEvent: {}
+[6.362814] (-) TimerEvent: {}
+[6.463701] (-) TimerEvent: {}
+[6.564610] (-) TimerEvent: {}
+[6.665483] (-) TimerEvent: {}
+[6.766328] (-) TimerEvent: {}
+[6.867342] (-) TimerEvent: {}
+[6.968381] (-) TimerEvent: {}
+[7.069775] (-) TimerEvent: {}
+[7.171239] (-) TimerEvent: {}
+[7.273984] (-) TimerEvent: {}
+[7.377550] (-) TimerEvent: {}
+[7.478719] (-) TimerEvent: {}
+[7.579671] (-) TimerEvent: {}
+[7.680543] (-) TimerEvent: {}
+[7.781473] (-) TimerEvent: {}
+[7.882294] (-) TimerEvent: {}
+[7.983208] (-) TimerEvent: {}
+[8.084214] (-) TimerEvent: {}
+[8.185089] (-) TimerEvent: {}
+[8.285927] (-) TimerEvent: {}
+[8.386750] (-) TimerEvent: {}
+[8.487632] (-) TimerEvent: {}
+[8.588521] (-) TimerEvent: {}
+[8.689370] (-) TimerEvent: {}
+[8.790199] (-) TimerEvent: {}
+[8.891069] (-) TimerEvent: {}
+[8.991904] (-) TimerEvent: {}
+[9.092818] (-) TimerEvent: {}
+[9.193762] (-) TimerEvent: {}
+[9.294662] (-) TimerEvent: {}
+[9.395578] (-) TimerEvent: {}
+[9.496473] (-) TimerEvent: {}
+[9.597323] (-) TimerEvent: {}
+[9.698182] (-) TimerEvent: {}
+[9.799092] (-) TimerEvent: {}
+[9.900078] (-) TimerEvent: {}
+[10.001004] (-) TimerEvent: {}
+[10.101865] (-) TimerEvent: {}
+[10.202780] (-) TimerEvent: {}
+[10.303693] (-) TimerEvent: {}
+[10.404578] (-) TimerEvent: {}
+[10.505428] (-) TimerEvent: {}
+[10.606261] (-) TimerEvent: {}
+[10.707166] (-) TimerEvent: {}
+[10.808082] (-) TimerEvent: {}
+[10.908989] (-) TimerEvent: {}
+[11.009885] (-) TimerEvent: {}
+[11.110744] (-) TimerEvent: {}
+[11.211673] (-) TimerEvent: {}
+[11.312550] (-) TimerEvent: {}
+[11.413420] (-) TimerEvent: {}
+[11.514237] (-) TimerEvent: {}
+[11.615128] (-) TimerEvent: {}
+[11.715973] (-) TimerEvent: {}
+[11.816806] (-) TimerEvent: {}
+[11.917645] (-) TimerEvent: {}
+[12.018492] (-) TimerEvent: {}
+[12.119425] (-) TimerEvent: {}
+[12.220403] (-) TimerEvent: {}
+[12.321728] (-) TimerEvent: {}
+[12.422674] (-) TimerEvent: {}
+[12.523554] (-) TimerEvent: {}
+[12.624383] (-) TimerEvent: {}
+[12.725220] (-) TimerEvent: {}
+[12.826061] (-) TimerEvent: {}
+[12.926940] (-) TimerEvent: {}
+[13.027813] (-) TimerEvent: {}
+[13.128655] (-) TimerEvent: {}
+[13.229494] (-) TimerEvent: {}
+[13.330432] (-) TimerEvent: {}
+[13.431290] (-) TimerEvent: {}
+[13.532106] (-) TimerEvent: {}
+[13.632898] (-) TimerEvent: {}
+[13.733737] (-) TimerEvent: {}
+[13.834619] (-) TimerEvent: {}
+[13.935501] (-) TimerEvent: {}
+[14.036340] (-) TimerEvent: {}
+[14.137160] (-) TimerEvent: {}
+[14.237991] (-) TimerEvent: {}
+[14.338876] (-) TimerEvent: {}
+[14.439761] (-) TimerEvent: {}
+[14.540657] (-) TimerEvent: {}
+[14.641798] (-) TimerEvent: {}
+[14.742650] (-) TimerEvent: {}
+[14.843732] (-) TimerEvent: {}
+[14.944717] (-) TimerEvent: {}
+[15.045935] (-) TimerEvent: {}
+[15.147541] (-) TimerEvent: {}
+[15.248459] (-) TimerEvent: {}
+[15.349340] (-) TimerEvent: {}
+[15.450467] (-) TimerEvent: {}
+[15.551348] (-) TimerEvent: {}
+[15.652133] (-) TimerEvent: {}
+[15.753009] (-) TimerEvent: {}
+[15.853828] (-) TimerEvent: {}
+[15.954687] (-) TimerEvent: {}
+[16.055547] (-) TimerEvent: {}
+[16.156413] (-) TimerEvent: {}
+[16.257244] (-) TimerEvent: {}
+[16.358110] (-) TimerEvent: {}
+[16.458937] (-) TimerEvent: {}
+[16.559891] (-) TimerEvent: {}
+[16.660829] (-) TimerEvent: {}
+[16.761690] (-) TimerEvent: {}
+[16.862549] (-) TimerEvent: {}
+[16.963403] (-) TimerEvent: {}
+[17.064244] (-) TimerEvent: {}
+[17.165124] (-) TimerEvent: {}
+[17.265941] (-) TimerEvent: {}
+[17.366815] (-) TimerEvent: {}
+[17.467755] (-) TimerEvent: {}
+[17.568580] (-) TimerEvent: {}
+[17.669414] (-) TimerEvent: {}
+[17.770210] (-) TimerEvent: {}
+[17.871106] (-) TimerEvent: {}
+[17.971924] (-) TimerEvent: {}
+[18.072756] (-) TimerEvent: {}
+[18.173589] (-) TimerEvent: {}
+[18.274386] (-) TimerEvent: {}
+[18.375208] (-) TimerEvent: {}
+[18.475999] (-) TimerEvent: {}
+[18.576832] (-) TimerEvent: {}
+[18.677713] (-) TimerEvent: {}
+[18.778560] (-) TimerEvent: {}
+[18.879532] (-) TimerEvent: {}
+[18.980609] (-) TimerEvent: {}
+[19.081436] (-) TimerEvent: {}
+[19.182357] (-) TimerEvent: {}
+[19.283596] (-) TimerEvent: {}
+[19.385019] (-) TimerEvent: {}
+[19.485892] (-) TimerEvent: {}
+[19.586705] (-) TimerEvent: {}
+[19.687558] (-) TimerEvent: {}
+[19.788379] (-) TimerEvent: {}
+[19.889233] (-) TimerEvent: {}
+[19.990139] (-) TimerEvent: {}
+[20.091229] (-) TimerEvent: {}
+[20.192115] (-) TimerEvent: {}
+[20.293049] (-) TimerEvent: {}
+[20.293971] (pavbot_gps) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pavbot_gps\x1b[0m\n'}
+[20.393264] (-) TimerEvent: {}
+[20.494497] (-) TimerEvent: {}
+[20.595612] (-) TimerEvent: {}
+[20.696845] (-) TimerEvent: {}
+[20.797875] (-) TimerEvent: {}
+[20.898783] (-) TimerEvent: {}
+[20.999659] (-) TimerEvent: {}
+[21.100940] (-) TimerEvent: {}
+[21.201859] (-) TimerEvent: {}
+[21.272523] (pavbot_gps) StdoutLine: {'line': b'[100%] Built target pavbot_gps\n'}
+[21.302116] (-) TimerEvent: {}
+[21.317095] (pavbot_gps) CommandEnded: {'returncode': 0}
+[21.319407] (pavbot_gps) JobProgress: {'identifier': 'pavbot_gps', 'progress': 'install'}
+[21.357964] (pavbot_gps) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps'], 'cwd': '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mrstalford'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mrstalford'), ('OLDPWD', '/home/mrstalford'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1272'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install:/home/mrstalford/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mrstalford'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mrstalford'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mrstalford-desktop:@/tmp/.ICE-unix/1249,unix/mrstalford-desktop:/tmp/.ICE-unix/1249'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4e3aab13_ef27_4be3_a98d_e2e3e01a0ab4'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DNE5J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.132'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_imu:/home/mrstalford/ros2_ws/install/pavbot_gps:/home/mrstalford/ros2_ws/install/pavbot_estop:/opt/ros/humble')]), 'shell': False}
+[21.394279] (pavbot_gps) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.395654] (pavbot_gps) StdoutLine: {'line': b'-- Installing: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pavbot_gps/pavbot_gps\n'}
+[21.402302] (-) TimerEvent: {}
+[21.408222] (pavbot_gps) StdoutLine: {'line': b'-- Set runtime path of "/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pavbot_gps/pavbot_gps" to ""\n'}
+[21.409009] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/launch\n'}
+[21.409627] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/launch/gps.launch.py\n'}
+[21.410155] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/package_run_dependencies/pavbot_gps\n'}
+[21.410686] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/parent_prefix_path/pavbot_gps\n'}
+[21.411301] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/ament_prefix_path.sh\n'}
+[21.411888] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/ament_prefix_path.dsv\n'}
+[21.412378] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/path.sh\n'}
+[21.412889] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/path.dsv\n'}
+[21.413968] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.bash\n'}
+[21.414379] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.sh\n'}
+[21.414720] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.zsh\n'}
+[21.415172] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.dsv\n'}
+[21.415723] (pavbot_gps) StdoutLine: {'line': b'-- Installing: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.dsv\n'}
+[21.416296] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/packages/pavbot_gps\n'}
+[21.416869] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/cmake/pavbot_gpsConfig.cmake\n'}
+[21.417276] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/cmake/pavbot_gpsConfig-version.cmake\n'}
+[21.417691] (pavbot_gps) StdoutLine: {'line': b'-- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.xml\n'}
+[21.422354] (pavbot_gps) CommandEnded: {'returncode': 0}
+[21.502465] (-) TimerEvent: {}
+[21.513000] (pavbot_gps) JobEnded: {'identifier': 'pavbot_gps', 'rc': 0}
+[21.516201] (-) EventReactorShutdown: {}

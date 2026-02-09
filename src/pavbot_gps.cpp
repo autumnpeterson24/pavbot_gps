@@ -41,15 +41,19 @@ class PavbotGPS : public rclcpp::Node
 
   // Function using in wall timer to update at a constant hertz
   void update() {
+    //RCLCPP_INFO(get_logger(), "Update fired");
     std::pair<float, float> latLng;
+    //std::string test = gps.readSerial();
+    //RCLCPP_INFO(get_logger(), "%s", test.c_str());
+
     if(gps.readLatLng(latLng)) {
       // Valid
-      RCLCPP_INFO(get_logger(), "Valid packet collection");
+      RCLCPP_INFO(get_logger(), "Lat, Long: %f, %f", latLng.first, latLng.second);
     } else {
       // No fix
-      RCLCPP_INFO(get_logger(), "NO FIX packet collection or failed connection");
+      //RCLCPP_INFO(get_logger(), "NO FIX packet collection or failed connection");
     }
-
+    
     if (lastLatLng.first != latLng.first || lastLatLng.second != latLng.second) {
       // Put results into lat, lng and publish
       std_msgs::msg::Float32 lat;
@@ -63,8 +67,8 @@ class PavbotGPS : public rclcpp::Node
     lastLatLng = latLng;
   }
 
-public:
-// CONSTRUCTOR -----------------------------
+  public:
+  // CONSTRUCTOR -----------------------------
   PavbotGPS() : Node("pavbot_gps") {
     // Parameters -----------------
     port = declare_parameter<std::string>("port", "/dev/ttyUSB0"); // This is if the Arduino is in the USB0 slot it's just a placeholder

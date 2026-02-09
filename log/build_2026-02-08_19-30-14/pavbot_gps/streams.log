@@ -1,0 +1,28 @@
+[0.067s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[0.287s] [35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[0.392s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[21.620s] [100%] [32m[1mLinking CXX executable pavbot_gps[0m
+[22.563s] [100%] Built target pavbot_gps
+[22.606s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[22.649s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps
+[22.679s] -- Install configuration: ""
+[22.680s] -- Installing: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pavbot_gps/pavbot_gps
+[22.695s] -- Set runtime path of "/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pavbot_gps/pavbot_gps" to ""
+[22.695s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/launch
+[22.696s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/launch/gps.launch.py
+[22.696s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/package_run_dependencies/pavbot_gps
+[22.697s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/parent_prefix_path/pavbot_gps
+[22.697s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/ament_prefix_path.sh
+[22.698s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/ament_prefix_path.dsv
+[22.698s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/path.sh
+[22.699s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/path.dsv
+[22.699s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.bash
+[22.700s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.sh
+[22.700s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.zsh
+[22.700s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.dsv
+[22.701s] -- Installing: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.dsv
+[22.701s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/packages/pavbot_gps
+[22.702s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/cmake/pavbot_gpsConfig.cmake
+[22.702s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/cmake/pavbot_gpsConfig-version.cmake
+[22.703s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.xml
+[22.709s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps

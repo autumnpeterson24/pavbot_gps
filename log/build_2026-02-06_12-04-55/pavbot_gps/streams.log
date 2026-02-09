@@ -1,0 +1,49 @@
+[0.072s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[10.836s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.842s]                  from [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:12[m[K:
+[10.842s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In member function ‘[01m[Kvoid PavbotGPS::update()[m[K’:
+[10.842s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:46:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[10.843s]    46 |     RCLCPP_INFO(get_logger(), [01;35m[K"%s"[m[K, test);
+[10.843s]       |                               [01;35m[K^~~~[m[K
+[10.844s] [01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:46:33:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[10.844s]    46 |     RCLCPP_INFO(get_logger(), "[01;36m[K%s[m[K", test);
+[10.845s]       |                                [01;36m[K~^[m[K
+[10.845s]       |                                 [01;36m[K|[m[K
+[10.846s]       |                                 [01;36m[Kchar*[m[K
+[19.101s] [100%] [32m[1mLinking CXX executable pavbot_gps[0m
+[20.053s] [100%] Built target pavbot_gps
+[20.094s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps -- -j4 -l4
+[20.142s] Invoking command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps
+[20.169s] -- Install configuration: ""
+[20.170s] -- Installing: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pavbot_gps/pavbot_gps
+[20.183s] -- Set runtime path of "/home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/lib/pavbot_gps/pavbot_gps" to ""
+[20.183s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/launch
+[20.184s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/launch/gps.launch.py
+[20.184s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/package_run_dependencies/pavbot_gps
+[20.185s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/parent_prefix_path/pavbot_gps
+[20.185s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/ament_prefix_path.sh
+[20.186s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/ament_prefix_path.dsv
+[20.186s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/path.sh
+[20.187s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/environment/path.dsv
+[20.187s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.bash
+[20.188s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.sh
+[20.188s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.zsh
+[20.189s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/local_setup.dsv
+[20.189s] -- Installing: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.dsv
+[20.189s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/ament_index/resource_index/packages/pavbot_gps
+[20.190s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/cmake/pavbot_gpsConfig.cmake
+[20.190s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/cmake/pavbot_gpsConfig-version.cmake
+[20.191s] -- Up-to-date: /home/mrstalford/ros2_ws/src/pavbot_gps/install/pavbot_gps/share/pavbot_gps/package.xml
+[20.197s] Invoked command in '/home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mrstalford/ros2_ws/src/pavbot_gps/build/pavbot_gps

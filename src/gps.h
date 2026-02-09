@@ -62,27 +62,52 @@ class GPS {
 
      bool readLatLng(std::pair<float, float> &latLng) {
         std::string sentence = readSerial();
-        if (sentence.size() < 6) return false; // Dud
+        auto fields = split(sentence, ',');
+        //if (sentence.size() < 6) return false; // Dud
 
         // Packet may be one of several structures of GPS data
-        if (sentence.substr(0,6) == "$GPRMC") {
-        auto fields = split(sentence, ',');
-        if (fields.size() < 7) return false; // Incomplete data; untrusted
-        if (fields[2] != "A") return false; // Not "A"ctive ("V"oid)
-        latLng.first = nmeaToDecimal(fields[3], fields[4]);
-        latLng.second = nmeaToDecimal(fields[5], fields[6]);
-        return true;
+        if (fields[0] == "$GPRMC") {
+            //if (fields.size() < 7) return false; // Incomplete data; untrusted
+            if (fields[2] != "A") return false; // Not "A"ctive ("V"oid)
+            //if (fields[3] == "" || fields[4] == ""
+            // || fields[5] == "" || fields[6] == "") return false;
+            latLng.first = nmeaToDecimal(fields[3], fields[4]);
+            latLng.second = nmeaToDecimal(fields[5], fields[6]);
+            return true;
         }
 
-        else if (sentence.substr(0,6) == "$GPGGA") {
-        auto fields = split(sentence, ',');
-        if (fields.size() < 6) return false; // Incomplete data; untrusted
-        int fix = std::stoi(fields[6]);
-        if (fix == 0) return false; // 0 ->  NO FIX
-        latLng.first = nmeaToDecimal(fields[2], fields[3]);
-        latLng.second = nmeaToDecimal(fields[4], fields[5]);
-        return true;
+        else if (fields[0] == "$GPGGA") {
+            //if (fields.size() < 6) return false; // Incomplete data; untrusted
+            //int sats = std::stoi(fields[7]);
+            //if (sats < 3) return false; // 0 ->  NO FIX
+            if (fields[2] == "" || fields[3] == ""
+             || fields[4] == "" || fields[5] == "") return false;
+            latLng.first = nmeaToDecimal(fields[2], fields[3]);
+            latLng.second = nmeaToDecimal(fields[4], fields[5]);
+            return true;
         }
+
+        /*
+        else if (sentence.substr(0,6) == "$GPGSV") {
+
+        }
+        
+
+        else if (sentence.substr(0,6) == "$GPZDA") {
+
+        }
+        
+
+        else if (sentence.substr(0,6) == "$GPGSA") {
+
+        }
+        
+
+        else if (fields[0] == "$GPGBS") {
+
+        }
+
+        */
 
         return false;
     }

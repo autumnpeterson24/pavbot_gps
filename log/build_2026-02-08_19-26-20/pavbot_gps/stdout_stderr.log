@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target pavbot_gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o[0m
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:[m[K In member function ‘[01m[Kvoid PavbotGPS::update()[m[K’:
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:59:29:[m[K [01;31m[Kerror: [m[K‘[01m[KlatLng[m[K’ was not declared in this scope
+   59 |     if (lastLatLng.first != [01;31m[KlatLng[m[K.first || lastLatLng.second != latLng.second) {
+      |                             [01;31m[K^~~~~~[m[K
+[01m[K/home/mrstalford/ros2_ws/src/pavbot_gps/src/pavbot_gps.cpp:69:18:[m[K [01;31m[Kerror: [m[K‘[01m[KlatLng[m[K’ was not declared in this scope
+   69 |     lastLatLng = [01;31m[KlatLng[m[K;
+      |                  [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pavbot_gps.dir/build.make:76: CMakeFiles/pavbot_gps.dir/src/pavbot_gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pavbot_gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
