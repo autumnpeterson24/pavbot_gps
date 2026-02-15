@@ -3,7 +3,8 @@
 <package format="3">
   <name>pavbot_gps</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>GPS driver for PAVbot (publishes NavSatFix + COG/SOG)</description>
+
   <maintainer email="petersonautumn24@gmail.com">autumn</maintainer>
   <license>TODO: License declaration</license>
 
@@ -11,6 +12,7 @@
 
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
