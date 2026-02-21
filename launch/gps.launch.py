@@ -26,6 +26,15 @@ Check your nodes are working and publishing:
         * 
 
 
+    ROOM TESTING:
+    my gps coordinates: GPS fix: lat=34.62410333 lon=-112.35272000
+
+    # changed ports to be mapped by id rather than /ttyUSB0
+    # command to check: ls -l /dev/serial/by-id/
+
+
+
+
 """
 
 from launch import LaunchDescription
@@ -39,7 +48,8 @@ def generate_launch_description():
             name='pavbot_gps',
             output='screen',
             parameters=[{
-                'port': '/dev/ttyUSB0',
+                'port': '/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0',
+                # 'port': '/dev/ttyUSB1',
                 # 'baud': 115200,
                 'timeout_ms': 500
             }]
