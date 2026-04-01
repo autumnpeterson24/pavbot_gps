@@ -14,6 +14,7 @@
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <sensor_msgs/msg/nav_sat_status.hpp>
 #include <std_msgs/msg/float32.hpp>
+#include <std_msgs/msg/int32.hpp>
 
 #include <termios.h>
 #include <fcntl.h>
@@ -205,6 +206,8 @@ public:
     fix_pub_ = this->create_publisher<sensor_msgs::msg::NavSatFix>("/gps/fix", qos);
     cog_pub_ = this->create_publisher<std_msgs::msg::Float32>("/gps/cog_deg", qos);
     sog_pub_ = this->create_publisher<std_msgs::msg::Float32>("/gps/sog_mps", qos);
+    sats_pub_ = this->create_publisher<std_msgs::msg::Int32>("/gps/satellites", qos);
+
 
     gps_.configure(port_, B4800, timeout_ms_);
 
@@ -277,14 +280,18 @@ private:
   }
 
   void handle_gga(const GPS::GGA& gga) {
-    // Only use GGA if it indicates a valid fix quality and has position.
-    if (!gga.has_pos) return;
-    const bool has_fix = (gga.fix_quality > 0);
-    if (!has_fix) return;
+  // Publish satellite count for debugging/field testing
+  std_msgs::msg::Int32 sats_msg;
+  sats_msg.data = gga.sats;
+  sats_pub_->publish(sats_msg);
 
-    // If RMC is present too, you'll publish fix from RMC as well; that's fine.
-    publish_fix(gga.lat_deg, gga.lon_deg, /*has_fix=*/true);
-  }
+  // Only use GGA if it indicates a valid fix quality and has position.
+  if (!gga.has_pos) return;
+  const bool has_fix = (gga.fix_quality > 0);
+  if (!has_fix) return;
+
+  publish_fix(gga.lat_deg, gga.lon_deg, /*has_fix=*/true);
+}
 
 void publish_fix(double lat_deg, double lon_deg, bool has_fix) {
   sensor_msgs::msg::NavSatFix fix;
@@ -329,6 +336,7 @@ void publish_fix(double lat_deg, double lon_deg, bool has_fix) {
   rclcpp::Publisher<sensor_msgs::msg::NavSatFix>::SharedPtr fix_pub_;
   rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr cog_pub_;
   rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr sog_pub_;
+  rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr sats_pub_; // satellite count
   rclcpp::TimerBase::SharedPtr timer_;
 
   // GPS
