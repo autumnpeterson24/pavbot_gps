@@ -286,43 +286,39 @@ private:
     publish_fix(gga.lat_deg, gga.lon_deg, /*has_fix=*/true);
   }
 
-  void publish_fix(double lat_deg, double lon_deg, bool has_fix) {
-    sensor_msgs::msg::NavSatFix fix;
-    fix.header.stamp = this->now();
-    fix.header.frame_id = "gps_link";
+void publish_fix(double lat_deg, double lon_deg, bool has_fix) {
+  sensor_msgs::msg::NavSatFix fix;
+  fix.header.stamp = this->now();
+  fix.header.frame_id = "gps_link";
 
-    if (has_fix) {
-      fix.status.status = sensor_msgs::msg::NavSatStatus::STATUS_FIX;
-      fix.status.service = sensor_msgs::msg::NavSatStatus::SERVICE_GPS;
-    } else {
-      fix.status.status = sensor_msgs::msg::NavSatStatus::STATUS_NO_FIX;
-      fix.status.service = sensor_msgs::msg::NavSatStatus::SERVICE_GPS;
-    }
-
-    fix.latitude = lat_deg;
-    fix.longitude = lon_deg;
-    fix.altitude = 0.0; // BU-353S4 can provide altitude in GGA if you want; optional.
-
-    // Covariance: unknown -> set type UNKNOWN. (You can set rough values later.)
-    fix.position_covariance_type = sensor_msgs::msg::NavSatFix::COVARIANCE_TYPE_UNKNOWN;
-
-    // Only publish when changed materially (reduces spam)
-    const bool changed =
-      (!has_last_fix_) ||
-      (std::abs(fix.latitude - last_fix_lat_) > 1e-9) ||
-      (std::abs(fix.longitude - last_fix_lon_) > 1e-9);
-
-    if (changed) {
-      fix_pub_->publish(fix);
-      last_fix_time_ = fix.header.stamp;
-      has_last_fix_ = true;
-      last_fix_lat_ = fix.latitude;
-      last_fix_lon_ = fix.longitude;
-
-      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
-        "GPS fix: lat=%.8f lon=%.8f", fix.latitude, fix.longitude);
-    }
+  if (has_fix) {
+    fix.status.status = sensor_msgs::msg::NavSatStatus::STATUS_FIX;
+    fix.status.service = sensor_msgs::msg::NavSatStatus::SERVICE_GPS;
+  } else {
+    fix.status.status = sensor_msgs::msg::NavSatStatus::STATUS_NO_FIX;
+    fix.status.service = sensor_msgs::msg::NavSatStatus::SERVICE_GPS;
   }
+
+  fix.latitude = lat_deg;
+  fix.longitude = lon_deg;
+  fix.altitude = 0.0;
+
+  fix.position_covariance_type =
+    sensor_msgs::msg::NavSatFix::COVARIANCE_TYPE_UNKNOWN;
+
+  // Always publish valid fixes so downstream nodes see fresh timestamps,
+  // even when the robot is stationary and coordinates do not change.
+  fix_pub_->publish(fix);
+
+  last_fix_time_ = fix.header.stamp;
+  has_last_fix_ = true;
+  last_fix_lat_ = fix.latitude;
+  last_fix_lon_ = fix.longitude;
+
+  RCLCPP_INFO_THROTTLE(
+    this->get_logger(), *this->get_clock(), 1000,
+    "GPS fix: lat=%.8f lon=%.8f", fix.latitude, fix.longitude);
+}
 
   // Params
   std::string port_;
